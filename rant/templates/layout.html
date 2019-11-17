@@ -17,8 +17,21 @@
 <body>
     <div class="topbar">
         <a href="#">Home</a>
+        <a href="#">View</a>
         <a href="#">About</a>
     </div>
+
+    
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    
+                        <p class="flash-message">{{ message }}</p>
+                    
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    
 
     <div class="contentarea">
     {% block content %} {% endblock content %}

@@ -4,9 +4,17 @@ $background1: orange; //.contentarea (mid)
 $background2: rgb(156, 102, 0); //html (bottom)
 $background3: rgb(255, 123, 0); //topbar (navbar)
 
+
+
 .contentarea {
     background: $background1;
+    margin: auto;
 }
+
+body {
+    background: $background2;
+}
+
 html {
     background: $background2;
 }
@@ -15,6 +23,7 @@ html {
     font-family: 'Roboto', sans-serif;
     background: $background3;
     text-align: center;
+    
     a {
         text-decoration: none!important;
         color: rgb(0, 74, 172);
@@ -26,4 +35,11 @@ html {
 .contentarea {
     font-family: 'Roboto', sans-serif;
     text-align: center;
+}
+
+.flash-message {
+    background: rgb(255, 178, 35);
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
 }

@@ -2,7 +2,7 @@
 #textarea {
   width: 50%;
   height: 400px;
-  border: #272727 3px solid;
+  border: orange 3px solid;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   resize: none;
