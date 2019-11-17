@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+.contentarea {
+  background: orange;
+}
+
+html {
+  background: #9c6600;
+}
+
+.topbar {
+  font-family: 'Roboto', sans-serif;
+  background: #ff7b00;
+  text-align: center;
+}
+
+.topbar a {
+  text-decoration: none !important;
+  color: #004aac;
+  font-size: 45px;
+  padding: 10px;
+}
+
+.contentarea {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}

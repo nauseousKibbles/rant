@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+#textarea {
+    width: 50%;
+    height: 50%;
+    border: rgb(128, 128, 128) 3px solid;
+    transition: 0.5s;
+}
+
+#textarea:focus {
+    border: rgb(39, 39, 39) 3px solid;
+}
+
+form {
+    padding: 30px;
+}
+
+p {
+    font-style: italic;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}

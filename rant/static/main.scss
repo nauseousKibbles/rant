@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+$background1: orange; //.contentarea (mid)
+$background2: rgb(156, 102, 0); //html (bottom)
+$background3: rgb(255, 123, 0); //topbar (navbar)
+
+.contentarea {
+    background: $background1;
+}
+html {
+    background: $background2;
+}
+
+.topbar {
+    font-family: 'Roboto', sans-serif;
+    background: $background3;
+    text-align: center;
+    a {
+        text-decoration: none!important;
+        color: rgb(0, 74, 172);
+        font-size: 45px;
+        padding: 10px;
+    }
+}
+
+.contentarea {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}

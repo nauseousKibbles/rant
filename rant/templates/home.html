@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='form.css') }}"
+    />
+
+    <p>Rant.Space</p>
+<form action="#">
+    <textarea name="rantspace" id="textarea" cols="30" rows="10"></textarea>
+    <br>
+    <input class="btn btn-primary" value="Submit" type="submit"> 
+</form>
+
+
+{% endblock content %}
