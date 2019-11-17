@@ -7,10 +7,21 @@
     />
 
     <p>Rant.Space</p>
-<form action="#">
+
+
+<!-- <form action="#">
     <textarea name="rantspace" id="textarea" cols="30" rows="10"></textarea>
     <br>
     <input class="btn btn-primary" value="Submit" type="submit"> 
+</form> -->
+
+<form action="" method="POST">
+    {{ form.hidden_tag() }}
+
+    {{ form.content.label(class="hidden") }}
+    {{ form.content(id="textarea") }}
+    <br>
+    {{ form.submit(class="btn btn-primary") }}
 </form>
 
 

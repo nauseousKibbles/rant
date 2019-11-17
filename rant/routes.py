@@ -1,6 +1,8 @@
 from rant import app
 from flask import render_template
+from rant.forms import rantform
 
-@app.route("/")
+@app.route("/", methods=['GET','POST'])
 def home():
-    return render_template("home.html")
+    form = rantform()
+    return render_template("home.html", form=form)
