@@ -7,6 +7,7 @@
   transition: 0.5s;
   resize: none;
   background: #eb9800 !important;
+  outline: none;
 }
 
 #textarea:focus {
@@ -26,4 +27,15 @@ p {
 
 .hidden {
   display: none;
+}
+
+#titlearea {
+  width: 50%;
+  height: 100px;
+  border: orange 3px solid;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  resize: none;
+  background: #eb9800 !important;
+  outline: none;
 }

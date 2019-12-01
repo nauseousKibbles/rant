@@ -13,6 +13,10 @@
 <form action="" method="POST">
     {{ form.hidden_tag() }}
 
+    {{ form.title.label(class="hidden") }}
+    {{ form.title(id="titlearea") }}
+
+
     {{ form.content.label(class="hidden") }}
     {{ form.content(id="textarea") }}
     <br>
