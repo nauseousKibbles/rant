@@ -1,19 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-#textarea {
-  width: 50%;
-  height: 400px;
-  border: orange 3px solid;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  resize: none;
-  background: #eb9800 !important;
-  outline: none;
-}
-
-#textarea:focus {
-  border: orange 3px solid !important;
-}
-
 form {
   padding: 30px;
 }
@@ -29,13 +14,45 @@ p {
   display: none;
 }
 
-#titlearea {
+#textarea {
   width: 50%;
-  height: 100px;
+  height: 400px;
   border: orange 3px solid;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   resize: none;
   background: #eb9800 !important;
-  outline: none;
+}
+
+#textarea:focus {
+  border: orange 3px solid !important;
+}
+
+#titlearea {
+  width: 50%;
+  height: 35px;
+  border: orange 3px solid;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  resize: none;
+  background: #eb9800 !important;
+}
+
+#titlearea:focus {
+  border: orange 3px solid !important;
+}
+
+#passwordarea {
+  width: 50%;
+  height: 35px;
+  margin: none;
+  border: orange 3px solid;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  resize: none;
+  background: #eb9800 !important;
+}
+
+#passwordarea:focus {
+  border: orange 3px solid !important;
 }

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='form.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='view.css') }}"
+    />
+
+    <p>Rant.Space</p>
+
+
+<div class="singlepost">     
+    <h4>{{ post.title }} <a class="small" href="{{ url_for('update_post', post_id=post.id) }}">Edit</a>   <a class="small" href="{{ url_for('delete_post', post_id=post.id) }}">Delete</a></h4>
+    <p>{{ post.date_posted.strftime('%Y-%m-%d') }}</p>
+    <p>{{ post.content }}</p> 
+</div>               
+
+
+{% endblock content %}

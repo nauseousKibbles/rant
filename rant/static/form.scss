@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-#textarea {
-    width: 50%;
-    height: 400px;
-    
-    border: orange 3px solid;
-    transition: 0.5s;
-    resize: none;
-    background: rgb(235, 152, 0)!important;
-}
 
-#textarea:focus {
-    border: orange 3px solid!important;
-
-}
 
 form {
     padding: 30px;
@@ -30,3 +17,58 @@ p {
     display: none;
 }
 
+
+
+
+//  --------------------------------
+
+#textarea {
+    width: 50%;
+    height: 400px;
+    
+    border: orange 3px solid;
+    transition: 0.5s;
+    resize: none;
+    background: rgb(235, 152, 0)!important;
+}
+
+#textarea:focus {
+    border: orange 3px solid!important;
+}
+
+
+//  -------------------------------
+#titlearea {
+    
+
+    width: 50%;
+    height: 35px;
+    
+    border: orange 3px solid;
+    transition: 0.5s;
+    resize: none;
+    background: rgb(235, 152, 0)!important;
+}
+
+#titlearea:focus {
+    border: orange 3px solid!important;
+}
+
+
+
+// ----------------------------------------
+#passwordarea {
+    width: 50%;
+    height: 35px;
+
+    margin: none;
+    
+    border: orange 3px solid;
+    transition: 0.5s;
+    resize: none;
+    background: rgb(235, 152, 0)!important;  
+}
+
+#passwordarea:focus {
+    border: orange 3px solid!important;
+}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+<link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='form.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='view.css') }}"
+    />
+
+    <p>Rant.Space</p>
+
+
+
+<div class="viewbox">
+
+{% for post in posts %}
+<div class="viewposts">
+
+    <h4>    <a href="{{ url_for('single_post', post_id=post.id) }}">{{ post.title }}</a>    </h4>
+    <p>{{ post.date_posted.strftime('%Y-%m-%d') }}</p>
+
+</div>
+{% endfor %}
+
+</div>
+
+
+{% endblock content %}
