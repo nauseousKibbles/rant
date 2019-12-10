@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='form.css') }}"
+    />
+
+    <p>Rant.Space</p>
+
+
+    <h1>About</h1>
+
+<p>I thought this would be a fun idea to make and let other people use.</p>
+
+<p>How I created this website:</p>
+<li>Flask</li>
+<li>A week</li>
+
+<br>
+<br>
+
+<h1>Misc Information</h1>
+<p>The dates go by YYYY/MM/DD</p>
+
+<h1>Contact Information</h1>
+<p>Just make a post but with 'YEET' in the title. I will make a better system later.</p>
+
+
+{% endblock content %}

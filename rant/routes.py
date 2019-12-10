@@ -37,10 +37,12 @@ def home():
     return render_template("home.html", form=form)
 
 
+
+
 @app.route('/view')
 def view():
     posts = Post.query.all()
-    return render_template("view.html", posts=posts)
+    return render_template("view.html", posts=posts, secret="01011001 01100101 01100101 01110100 00100000 01101100 01100001 01110011 01100001 01100111 01101110 01100001 00100000 01001001 00100000 01100110 01101111 01110101 01101110 01100100 00100000 01110100 01101000 01101001 01110011 00100000 01101000 01100001 01101000 01100001 01101000 01100001")
 
 
 @app.route("/view/<int:post_id>")
@@ -96,4 +98,4 @@ def delete_post(post_id):
 
 @app.route('/about')
 def about():
-    return 'N/A'
+    return render_template("about.html")
